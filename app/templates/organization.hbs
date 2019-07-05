@@ -1,0 +1,14 @@
+<div>
+  <h2>Organization</h2>
+</div>
+{{#each model as |org|}}
+  <span>Name: </span>{{org.orgName}}<br>
+  <span>No. of Empolyees: </span>{{org.empSize}}<br>
+  <span>City: </span>{{org.city}}<br>
+  <br>
+{{/each}}
+<div>
+  {{#link-to "home" }}
+    Back
+  {{/link-to}}
+</div>

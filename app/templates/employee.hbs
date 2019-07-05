@@ -1,0 +1,16 @@
+<div>
+  <h2>Employee</h2>
+</div>
+{{#each model as |employee|}}
+  <span>ID: </span>{{employee.id}}<br>
+  <span>Name: </span>{{employee.firstName}}<br>
+  <span>Organization: </span>{{employee.org}}<br>
+  <span>City: </span>{{employee.city}}<br>
+  <br>
+{{/each}}
+<div><button type="button" {{action "addEmployee"}}>Add</button></div>
+<div>
+  {{#link-to "home" }}
+    Back
+  {{/link-to}}
+</div>
