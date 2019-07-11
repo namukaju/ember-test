@@ -6,11 +6,20 @@
   <span>Name: </span>{{employee.firstName}}<br>
   <span>Organization: </span>{{employee.org}}<br>
   <span>City: </span>{{employee.city}}<br>
-  <br>
+  {{#link-to "employee.edit" employee}} Edit {{/link-to}}
+  <br><br>
 {{/each}}
-<div><button type="button" {{action "addEmployee"}}>Add</button></div>
+<div><button type="button" {{action "renderAddEmployeeForm"}}>Add</button></div>
+
+{{!--{{#link-to "employee.add" }}
+  ADD
+{{/link-to}}--}}
+
 <div>
   {{#link-to "home" }}
     Back
   {{/link-to}}
 </div>
+{{outlet}}
+
+

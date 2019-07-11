@@ -85,4 +85,8 @@ this.get('/organizations', function(){
     }]
   };
 });
+
+this.get('/employees/:id', function (db, request) {
+  return { data: employees.find((emp) => request.params.id === emp.id) };
+});
 }
