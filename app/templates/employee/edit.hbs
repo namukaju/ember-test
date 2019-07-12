@@ -4,7 +4,7 @@
 <form >
   <span>
     <strong>Name: </strong>
-     <input type="text" value={{model.firstName}} placeholder="First Name">
+     {{input type="text" value=model.firstName placeholder="First Name"}}
   </span><br><br>
   {{!--<span>
     <strong>Last Name: </strong>
@@ -12,11 +12,11 @@
   </span><br><br>--}}
   <span>
     <strong>City: </strong>
-      <input type="text" value={{model.city}} placeholder="City">
+      {{input type="text" value=model.city placeholder="City"}}
   </span><br><br>
   <span>
     <strong>Orgnization: </strong>
-      <input type="text" value={{model.org}} placeholder="Organization">
+      {{input type="text" value=model.org placeholder="Organization"}}
   </span><br><br>
   <button {{action 'updateEmployee' }}>Submit</button>
 </form>
